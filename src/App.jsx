@@ -1,11 +1,11 @@
-
 import './App.css';
-import Movies from './Components/Movies';
-import WatchList from './Components/WatchList';
-import Navbar from './Components/Navbar';
-import Banner from './Components/Banner';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {useState,useEffect} from "react"
+import { lazy } from 'react';
+const WatchList = lazy(()=>import('./Components/WatchList'));
+const Navbar = lazy(()=>import('./Components/Navbar'));
+const Movies = lazy(()=>import('./Components/Movies'));
+const Banner = lazy(()=>import( './Components/Banner'))
 
 
 function App() {
