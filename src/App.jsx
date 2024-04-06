@@ -2,8 +2,8 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {useState,useEffect} from "react"
 import { lazy } from 'react';
-const WatchList = lazy(()=>import('./Components/WatchList'));
-const Navbar = lazy(()=>import('./Components/Navbar'));
+import WatchList from './Components/WatchList';
+import Navbar from './Components/Navbar';
 const Movies = lazy(()=>import('./Components/Movies'));
 const Banner = lazy(()=>import( './Components/Banner'))
 
