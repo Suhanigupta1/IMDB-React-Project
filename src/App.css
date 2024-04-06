@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 768px) {
+  .h-md-banner {
+    height: 90vh;
+    width: 100%; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+}
+
+@media (max-width: 767px) {
+  .h-md-banner {
+    height: 50vh; 
+    width: 100%; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+}
+
+
