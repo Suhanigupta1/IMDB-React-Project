@@ -91,7 +91,7 @@ function WatchList(props){
                         <td>{movieObj.vote_average}</td>
                         <td>{movieObj.popularity}</td>
                         <td>{genreids[movieObj.genre_ids[0]]}</td>
-                        <td onClick={()=>handleRemoveFromWatchList(movieObj)} className=" text-red-600">Delete</td>
+                        <td onClick={()=>handleRemoveFromWatchList(movieObj)} style={{cursor: pointer}} className=" text-red-600">Delete</td>
                     </tr>
                 })}
                 </tbody>
